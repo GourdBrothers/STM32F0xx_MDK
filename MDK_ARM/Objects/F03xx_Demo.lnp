@@ -1,0 +1,12 @@
+--cpu Cortex-M0
+".\objects\startup_stm32f030.o"
+".\objects\system_stm32f0xx.o"
+".\objects\stm32f0xx_gpio.o"
+".\objects\stm32f0xx_misc.o"
+".\objects\stm32f0xx_rcc.o"
+".\objects\main.o"
+".\objects\stm32f0xx_it.o"
+--strict --scatter ".\Objects\F03xx_Demo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\F03xx_Demo.map" -o .\Objects\F03xx_Demo.axf
